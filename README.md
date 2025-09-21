@@ -14,7 +14,7 @@ void rev(int *ar);
 void search(int *ar,int n);
 
 void main() {
-    int ar [MAX] = {0};
+    int ar[MAX] = {0};
     insert(ar, 0, 11);
     insert(ar, 1, 12);
     insert(ar, 2, 13);
@@ -65,12 +65,13 @@ void search(int *ar,int n){
     printf("Element %d not found in the array\n", n);
 }
 
-void del(int *ar,int p){
-    for(int i = p; i < MAX-1; i++) {
+void del(int *ar,int p){ 
+    int i ;
+    for( i = p; i < MAX; i++) {
         ar[i-1] = ar[i];
+    } 
+    ar[i-1] = 0; 
     }
-    ar[MAX-1] = 0;   // clear last element
-}
 
 void display(int *ar){
     for(int i = 0; i < MAX ; i++){
@@ -78,5 +79,6 @@ void display(int *ar){
     }
     printf("\n");
 }
+
 
 ```
