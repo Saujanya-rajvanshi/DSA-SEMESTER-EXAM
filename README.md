@@ -1,6 +1,7 @@
 # DSA-SEMESTER-EXAM
 this is my dsa semester codes
 
+### array 
 ```c
 #include <stdio.h>
 #define MAX 5
